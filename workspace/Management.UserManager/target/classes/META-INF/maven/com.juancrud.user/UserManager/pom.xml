@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.juancrud.user</groupId>
+	<artifactId>UserManager</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>UserManager</name>
+	
+	<properties>
+		<!-- Spring version -->
+        <version.spring>3.1.1.RELEASE</version.spring>
+    </properties>
+    
+	<dependencies>
+		<dependency>
+			<groupId>com.juancrud.entities.user</groupId>
+			<artifactId>UserEntities</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.juancrud.utilities</groupId>
+			<artifactId>Utilities</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.juancrud.users.common</groupId>
+			<artifactId>UserRestAppCommon</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>

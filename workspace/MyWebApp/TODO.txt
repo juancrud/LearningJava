@@ -1,0 +1,18 @@
+-Improve nhibernate queries (Use criteria query instead of HSQL)
+
+-Jquery Tree
+1. Cargar nodos lazy mode. Se cachean.
+2. Parametro con la ruta del nodo seleccionado. 
+3. Parametro islazyload para cargar todo 
+
+-Inner tables on Orders list (Edit y Remove buttons) 
+
+-KnownIssues:
+1. Add validation on duplicate names and more validations
+2. Client validations
+
+-Left Menu (Add more items and improve css)
+
+-Add messages instead of error codes on errors
+
+-Internationalization on DataTables

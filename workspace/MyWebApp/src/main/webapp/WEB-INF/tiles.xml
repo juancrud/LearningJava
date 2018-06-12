@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- Layouts -->
+	<definition name="defaultLayout" template="/WEB-INF/view/layout/defaultLayout.jsp">
+        <put-attribute name="header" value="/WEB-INF/view/shared/defaultHeader.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/view/shared/defaultLeftMenu.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/view/shared/defaultFooter.jsp" />
+    </definition>
+    
+    <definition name="contentLayout" template="/WEB-INF/view/layout/contentLayout.jsp">
+    	<put-attribute name="contentName" value="" />
+    	<put-attribute name="content" value="" />
+    </definition>
+    
+    <definition name="modalLayout" template="/WEB-INF/view/layout/modalLayout.jsp">
+    	<put-attribute name="modal" value="" />
+    </definition>
+    
+    <!-- Views -->
+    <definition name="start" extends="defaultLayout">
+        <put-attribute name="content" value="/WEB-INF/view/startPage.jsp" />
+    </definition>
+    
+    <definition name="listMarkets" extends="contentLayout">
+    	<put-attribute name="contentName" value="general.menu.markets" />
+    	<put-attribute name="content" value="/WEB-INF/view/market/listMarkets.jsp" />
+    </definition>
+    
+    <definition name="addEditMarket" extends="modalLayout">
+    	<put-attribute name="modal" value="/WEB-INF/view/market/addEditMarket.jsp" />
+    </definition>
+    
+    <definition name="listMeasures" extends="contentLayout">
+    	<put-attribute name="contentName" value="general.menu.measures" />
+    	<put-attribute name="content" value="/WEB-INF/view/measure/listMeasures.jsp" />
+    </definition>
+    
+    <definition name="addEditMeasure" extends="modalLayout">
+    	<put-attribute name="modal" value="/WEB-INF/view/measure/addEditMeasure.jsp" />
+    </definition>
+    
+    <definition name="listCatalog" extends="contentLayout">
+    	<put-attribute name="contentName" value="general.menu.catalog" />
+    	<put-attribute name="content" value="/WEB-INF/view/catalog/listCatalog.jsp" />
+    </definition>
+    
+    <definition name="showCatalogItems" template="/WEB-INF/view/catalog/showCatalogItems.jsp">
+    </definition>
+    
+    <definition name="addEditCategory" extends="modalLayout">
+    	<put-attribute name="modal" value="/WEB-INF/view/catalog/addEditCategory.jsp" />
+    </definition>
+    
+    <definition name="addEditProduct" extends="modalLayout">
+    	<put-attribute name="modal" value="/WEB-INF/view/catalog/addEditProduct.jsp" />
+    </definition>
+    
+    <definition name="listOrders" extends="contentLayout">
+    	<put-attribute name="contentName" value="general.menu.orders" />
+    	<put-attribute name="content" value="/WEB-INF/view/order/listOrders.jsp" />
+    </definition>
+    
+    <definition name="listOrderLines" template="/WEB-INF/view/order/listOrderLines.jsp">
+    </definition>
+    
+    <definition name="addEditOrder" extends="modalLayout">
+    	<put-attribute name="modal" value="/WEB-INF/view/order/addEditOrder.jsp" />
+    </definition>
+    
+    <definition name="addEditOrderLine" extends="modalLayout">
+    	<put-attribute name="modal" value="/WEB-INF/view/order/addEditOrderLine.jsp" />
+    </definition>
+    
+    <!-- Modals -->
+    <definition name="confirmationModal" extends="modalLayout">
+    	<put-attribute name="modal" value="/WEB-INF/view/modal/confirmation.jsp" />
+    </definition>
+    
+    <definition name="alertModal" extends="modalLayout">
+    	<put-attribute name="modal" value="/WEB-INF/view/modal/alert.jsp" />
+    </definition>
+    
+</tiles-definitions>

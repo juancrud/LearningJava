@@ -1,0 +1,30 @@
+Requirements:
+- Expuesto por un rest service	OK
+- Guardar usuario				OK
+- Modificar usuario				OK
+- Eliminar usuario				OK
+- Obtener usuario por id		OK
+- Obtener usuarios				OK
+- Cambiar contrasena			OK
+- Resetear usuario				OK
+- Autenticar					OK
+- Recobrar contrasena			
+
+- Agregar permiso				OK
+- Modificar permiso				OK
+- Eliminar permiso				OK
+- Obtener permiso por id		OK
+- Obtener permisos				OK
+- Ligar permiso-usuario			OK
+- Desligar permiso-usuario		OK
+- Obtener usuarios x permiso	OK
+- Obtener permisos x usuario	OK
+
+
+Tasks:
+- Guardar LoginAttempts				
+- Cambiar status en auth fails		
+- Campos de fecha no se ven bien	
+- Encriptar password				OK
+- Validations						
+- Manejo Excepciones				

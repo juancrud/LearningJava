@@ -1,0 +1,177 @@
+/* Default Layout */
+.header {
+    position: relative;
+    width: auto;
+    background-color:#6495ed;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.body {
+    position: relative;
+    width: auto;
+    padding-left: 10px;
+	padding-right: 10px;
+}
+.footer {
+	position: relative;
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #6495ED;
+}
+.sidebar {
+    position: relative;
+    width: 15%;
+    border-top: none;
+    float: left;
+}
+.sidebar:after { 
+	clear: both;
+    content: "\0020";
+    display: block;
+    overflow: hidden;
+}
+.leftMenu {
+	padding-left: 10px;
+}
+.leftMenu ul {
+	padding-left: 10px
+}
+.leftMenu li > div {
+	padding-left: 0px;
+}
+.leftMenu ul a{
+	text-decoration: none;
+}
+.content {
+	position:relative;
+	width: auto;
+	display: table-cell;
+}
+.hd > h1,.hd > .h1, .hd > h2, .hd > .h2, .hd > h3, .hd > .h3 {
+	padding: 5px 10px;
+}
+.flashy {
+	background-color: #4E5961;
+	background-image: -moz-linear-gradient(center top , #747D85, #28353C 100%);
+}
+.lightHead {
+	color: #FFFFFF;
+	text-shadow: -1px -1px 0 #333333;
+}
+.mod {
+	margin: 10px;
+	border-radius: 3px;
+}
+.bd {
+	border-style: solid;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-width: 1px;
+}
+
+/* Core styles */
+.header:after, .body:after, .content:after, .line:after, .bd:after {
+	clear: both;
+	content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+	display: block;
+	font-size: xx-large;
+	height: 0 !important;
+	line-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+html {
+    font-family: "Arial",sans-serif;
+    font-size: 12px;
+    background-color: #F1F1F1;
+    color:#363636;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
+address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, 
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	vertical-align: baseline;
+}
+a, a:visited { 
+	color: #069; 
+	text-decoration: underline; 
+	cursor: pointer;
+}
+a.disabled { 
+	text-decoration: none; 
+	color:#000; 
+	cursor: default;
+}
+a.activeLink { 
+	color: #803F97; 
+}
+
+/* Generic */
+.showOverflow {
+	overflow: visible !important;
+}
+.hide {
+	display: none;
+}
+.ib {
+	display: inline-block;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
+/* Headings */
+h1, .h1 {
+	font-size: 2.0rem;
+	font-style: normal;
+	font-weight: bold;
+}
+h2, .h2 {
+	font-size: 1.8rem;
+	font-style: normal;
+	font-weight: bold;
+}
+h3, .h3 {
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: bold;
+}
+h4, .h4 {
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: bold;
+}
+h5, .h5 {
+	font-size: 1.0rem;
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* DataTables */
+table.dtbl {
+	font-size: 1.1rem;
+	border: 1px solid #999999;
+}
+
+/* Forms */
+.formrow {
+	vertical-align: top;
+	padding-top: 15px;
+}
+.formrow:first-child {
+	padding-top: 0;
+}
+.formitem {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}

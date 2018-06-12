@@ -1,0 +1,111 @@
+input[type="text"],
+input[type="file"],
+input[type="email"],
+textarea,
+input[type="password"],
+select {
+    padding: 3px 6px;
+    margin: 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    background-color: #f9f9f9;
+}
+select {
+    padding: 2px 2px 2px 6px;
+}
+input[type="radio"] {
+    margin-top: 4px; margin-bottom: 4px;
+}
+textarea { resize: none;}
+.section { margin: 1.364em; }
+    
+.formrow {
+    padding: 18px 2px 2px 2px;
+    vertical-align: top;
+}
+.formrow.nopad, 
+.formrow:first-child {
+    padding-top: 0;
+}
+.formrow.header 
+{
+    font-style: italic;
+}
+.close{padding: 4px 0;}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+input[type="email"]:focus, 
+input[type="password"]:focus,
+textarea:focus, select:focus {
+    box-shadow: 0 0 0px 2px #F7931E;
+    outline: none;
+}
+
+label { font-weight: bold; }
+label.norm { font-weight: normal; }
+.formrow label.left { float:none; width: 125px; text-align: right; display: inline-block; margin-right:6px; }
+.formrow label.top, .firstSectionRow label.top { display:block; clear:both; padding-bottom:3px;}
+.error { color: #c1272d; font-size: 10px;font-size: 1.0rem; /* =10px */ }
+
+.firstSectionRow { margin-top: 12px; vertical-align: top;}
+.boost { position: relative; top:-2px; } /* Boost up a radio button top label to align with the other labels in the row */
+.dblboost { position: relative; top:-8px; } /* Boost up a radio button top label to align with the other labels in the row (2 per row) */
+
+.formitem {
+    display:inline-block;
+    margin-right:12px;
+    vertical-align: middle;
+}
+.formitem.nolabel { padding-top: 14px; min-width: 43px; }
+.formitem.top, .formitem input.top { vertical-align: top; }
+.formsection.base .formitem { vertical-align: baseline; }
+.stayInPlace {
+    position: relative;
+    z-index: -100;
+}
+
+.formsection { margin-bottom: 36px;}
+.formsection.lastsection { margin-bottom: 0;}
+.formsectionheader { color: #231F20;}
+
+.wFull          { width: 100% }  /* Used for those pesky elements that will not fill their containers (i.e. textarea/table) */
+.w700           { width: 700px }
+.w600           { width: 600px }
+.w560           { width: 560px; }  /* Currently used for Customer Search Results (so content sits next to checkbox)  */
+.w530           { width: 530px; }
+.w500           { width: 500px; }
+.w401           { width: 401px; } /*special width added to fix issue in chrome with the footer */
+.w410           { width: 410px; }
+.w465           { width: 465px; }
+.w350, .huge    { width: 350px; }
+.w265, .large   { width: 265px; }
+.w245           { width: 245px; }
+.w205           { width: 205px; }
+.w200, .medium  { width: 200px; }
+.w175           { width: 175px; }
+.w170           { width: 170px; }
+.w165           { width: 165px; }
+.w150           { width: 150px; }
+.w125           { width: 125px; }
+.w100, .small   { width: 100px; }
+select.small    { width: 109px; }
+.w75            { width: 75px; }
+.w65            { width: 65px; }
+.w60            { width: 60px; }
+.w50, .tiny     { width: 50px; }
+.w45            { width: 45px; }
+.w40            { width: 40px; }
+.w25            { width: 25px; }
+.minw245        { min-width: 245px; }
+
+.req:after { content:' *'; color: #c1272d; font-weight:bold; }
+
+::-webkit-input-placeholder { color: inherit; } /*Override the default styling of webkit placeholder text*/
+
+
+.mw375           { max-width: 375px; }
+.mw125           { max-width: 125px; }
+.mw90           { max-width: 90px; } /* This was added in order to support mobile safari*/
+.mw60           { max-width: 60px; } /* This was added in order to support mobile safari*/
+.mw50           { max-width: 50px; } /* This was added in order to support mobile safari*/

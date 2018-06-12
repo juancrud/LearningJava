@@ -1,0 +1,1002 @@
+html {
+    font-family: "Arial",sans-serif;
+    font-size: 62.5%; /* resets to 10px */
+}
+body
+{
+    font-size: 11px; font-size: 1.1rem; /* =11px */
+    color: #363636;
+    background-color: #F1F1F1;
+}
+
+a, a:visited { 
+	color: #069; 
+	text-decoration: underline; 
+	cursor: pointer;
+}
+a.disabled { 
+	text-decoration: none; 
+	color:#000; 
+	cursor: default;
+}
+a.activeLink { 
+	color: #803F97; 
+}   
+
+strong, .bold { 
+	font-weight: bold; 
+}
+
+.hide {
+	display: none;
+}
+.invisible { 
+	visibility: hidden; 
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.ib {
+	display:inline-block;
+}
+.il {
+	display:inline;
+}
+.tc {
+	display: table-cell;
+}
+/*
+.offScreen {position:absolute;left:-9999px;}
+.undecorated { text-decoration:none; }
+.centerUnit, .tac { text-align: center; }
+.rightUnit, .tar { text-align:right;}
+.bottom {position:absolute;  bottom:0;}
+.fullWidth { right:0;left:0; }
+.front { position:absolute; z-index:999;}
+.relative{ position: relative; }
+.absolute { position: absolute;}
+.accordionsummary{float: right; overflow: hidden;}
+
+label.disabled{color: #999;font-weight: bold;}
+.topUnit { vertical-align: top; }
+.middleUnit { vertical-align: middle; }
+.superUnit { vertical-align: super;}
+.baseUnit { vertical-align: baseline;}
+*/
+
+.pointer {
+	cursor: pointer; 
+}
+.noPointer { 
+	cursor: default;
+}
+
+/*
+.move { cursor: move;}
+.maxh610 {max-height:610px;}
+.maxh500 {max-height:500px;}
+.maxh300 {max-height: 300px;}
+.maxh200 {max-height:200px;}
+.maxh105 {max-height:105px;}
+
+.minh100 { min-height: 100px;}
+.minh200 { min-height: 200px;}
+.minh400 { min-height: 400px;}
+.minh600 { min-height: 600px;}
+
+.h600 { height: 600px;}
+.h110 { height: 110px;}
+*/
+.showOverflow { overflow: visible !important;}
+.hideoverflow { overflow:hidden; }
+/*
+.scrolloverflow { overflow:auto;overflow-y:scroll; }
+.scrollxoverflow { overflow-y:hidden;overflow-x:scroll; }
+.underline { text-decoration:underline; }
+.fixedBottom { position:fixed; bottom:0; left:0; }
+.nowrap { white-space: nowrap;}
+.showSpaces { white-space:pre }
+.wba { word-break: break-all; }
+*/
+
+/* ==== Display Item ==== */
+/* Used for displaying information with labels, like on the Customer Info view */
+.dispItem { color: #666; line-height: 1.35;}
+.dispItem label, .dispItem th { color: #000; font-weight:bold; }
+.dispBlock { margin-bottom: 1.5rem /* =15px */; }
+.dispBlockExt { margin-bottom: 0.5rem /* =5px */; }
+
+/* ==== Font Colors (default is #000) ==== */
+.clrDefault { color: #000; }
+.clrLtBlack { color: #213f20;}
+.clrPop { color: #f15f22; /* orange */ }
+.clrMuted { color: #666; /* gray */ }
+.clrAttn { color: #900; /* red */ }
+.clrSad { color: #0F2558; /* blue */ }
+.clrBright { color: #fff; /* white */ }
+.clrDark { color: #999; /* dark gray */ }
+.clrAvailable { color: #196331 /*green*/}
+
+.plain { text-decoration:none; cursor: default; }
+a.plain { text-decoration:none; cursor: default; }
+
+/* ==== Data Table ==== */
+.dtbl { width: 100%; font-size: 1.1rem; /*border-collapse:separate; */ }
+.dtbl tbody tr {
+    border-top: 1px solid #999;
+}
+.dtbl tbody tr:first-child 
+{
+    border-top: 0;
+}
+.datatables_borderwrapper { border: 1px solid #999; }
+.dtbl th { padding: 7px 6px; text-align:left; vertical-align: top;line-height: 16px;font-weight: normal;color:#58595b; }
+.dtbl th.rightUnit { text-align: right; }
+.dtbl th.centerUnit { text-align: center; }
+.dtbl td { padding: 9px 6px;vertical-align: top;}
+.dtbl td > input { margin-top: 0;margin-bottom: 0;}
+.dtbl > tbody > tr.odd td { background-color:#ffffff; } /* Works with AB.ui.stripeTable() to support IE8 */
+.dtbl > tbody > tr.even td { background-color:#e7e7e8; } /* Works with AB.ui.stripeTable() to support IE8 */
+.dtbl .sorting label, .dtbl .sorting_asc label, .dtbl .sorting_desc label { cursor: pointer; padding-right: 20px; }
+.dtbl .sorter.icon16 { background: url('/Areas/Crm/Content/images/icon_sprite.png') no-repeat left top;visibility: hidden;}
+.dtbl .sorting_asc .sorter.icon16 { background-position: -400px -512px;visibility: visible;}
+.dtbl .sorting_desc .sorter.icon16 {	background-position: -400px -528px;visibility: visible;}
+.dtbl th.sortable { cursor: pointer; }
+.dtbl tr.odd td.sorting_1 {	background-color: #e6e6e6;}
+.dtbl tr.even td.sorting_1 { background-color: #cecece;}
+.dtbl tr.odd td.sorting_2 {	background-color: #efefef;}
+.dtbl tr.even td.sorting_2 { background-color: #d5d0c6;}
+.dtbl tr.odd td.sorting_3 {	background-color: #f8f8f8;}
+.dtbl tr.even td.sorting_3 { background-color: #dbd7ce;}
+
+.dtbl tr.additionalInfo { border-top: 0; }
+.dtbl > tbody > tr.odd + tr.additionalInfo td { background-color:#ffffff; } /* Works with AB.ui.stripeTable() to support IE8 */
+.dtbl > tbody > tr.even + tr.additionalInfo td { background-color:#e7e7e8; } /* Works with AB.ui.stripeTable() to support IE8 */
+
+
+.tblPlain { border: none; }
+.tblPlain tbody tr, .tblPlain tbody td { border: none; }
+
+.tblStriped { width: 100%; font-size: 1.1rem; }
+.tblStriped thead th { background-color: #fff; }
+.tblStriped tr:nth-child(odd) { background-color: #e7e7e8 }
+.tblStriped th, .tblStriped td { padding: 7px 6px; text-align:left; vertical-align: top;line-height: 16px;font-weight: normal;color:#58595b; }
+.tblStriped tbody tr { border: 1px solid #999}
+
+/* ==== Add Link (for missing data) ==== */
+.add { color: #900; }
+
+/* ==== Action List ==== */
+.actionList ul { list-style-type:none; }
+.actionList li { line-height: 1.4; }
+.actionListH>li { display: inline; }
+
+/* ==== Flat List (just values, no labels or names)
+        Flat Block & Flat Item are for single items (no list) ==== */
+ul.flatList {
+    list-style-type:none;
+}
+ul.flatList, .flatBlock 
+{
+    margin-bottom: 4px;
+}
+.flatList li, .flatItem {
+    font-size: 14px;font-size: 1.4rem;
+}
+
+/* ==== Bullet List ==== */
+ul.bulletList { list-style-type:disc; }
+ul.bulletList li { margin-left: 18px; }
+
+/* ==== Info List (list of name/value pairs, zebra striped) ==== */
+.infoList { display: table;
+    width: 100%;
+    font-size: 14px;font-size: 1.4rem;
+    }
+.smallInfoList { display: table;}
+.infoLine { display: table-row;}
+.infoLine:nth-child(odd) {
+    background-color: #e7e7e8;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+.infoLine > * 
+{
+    display: table-cell;
+    padding: 11px 5px;
+}
+
+/* ==== Line Table (table of name/value pairs) ==== */
+.lntbl { width: 100%; margin: 6px 0; }
+.lntbl tr td:first-child { white-space: nowrap; font-weight: bold; }
+
+/* ===== Add Action button (Automated Processes) ===== */
+.addActionBtn 
+{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.actionBtn 
+{
+    margin-bottom: 6px;
+}
+
+/* ==== Breadcrumb ==== */
+.breadcrumb { font-size: 1.4rem/*14px*/; padding: 0 5px 0 5px; margin-bottom: 20px; color: #236ACF; }
+    .breadcrumb a{color:#236ACF; padding: 0px 5px;}
+
+/* ==== Big labeled icon links ==== */
+.iconLink { display: table-row; }
+.iconLink>.icon16, .iconLink>.icon24 { margin-left:auto;margin-right:auto;}
+
+/* ==== Buttons === */
+.buttonBar {
+    text-align: right;
+    /*padding: 12px;*/
+}
+.actionButtonBar {
+    text-align: left;   
+}
+.buttonBar > .button, .actionButtonBar > .button, .buttonBar > select {
+    margin-right: 12px;
+}
+.buttonBar > .button:last-child, .actionButtonBar > .button:last-child {
+    margin-right: 0;
+}
+/* modalButtonBar */
+.modalButtonBar > .button {
+    margin-bottom: 10px;
+}
+/* ==== Buttons Form === */
+.buttonBarForm {
+    text-align: right;
+    /*padding: 12px;*/
+    float: none;
+    clear: both;
+}
+.buttonBarForm > .button {
+    margin-right: 12px;
+}
+.buttonBarForm > .button:last-child {
+    margin-right: 0;
+}
+
+.statusForm {
+    width: 600px;
+    float: left;
+}
+
+.noteForm {
+    width: 300px;
+    float: right;
+}
+
+.noteFormSold {
+    position: absolute;
+    right: 75px;
+    top: 350px;
+    width: 300px;
+}
+
+.buttonSoldForm {
+    padding-top: 200px;
+}
+
+
+/*
+	BUTTON BASE CLASS (GREEN)
+    Style guide calls this "Primary"
+	-----------------
+	                    Normal		Hover
+	text shadow			#1e7137		#196331
+ 
+	solid background	#44a342		#0a6231
+	gradient top		#9fcf6f		#008041
+	gradient bottom		#0a5f2f		#13431f
+ 
+	inner border		#cfe7cf		#478964
+	outer border		#659941		#363
+*/
+.button {
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px 12px;
+    margin: 0;
+    line-height: 16px;
+
+	color: #fff;
+	font-size: 11px;font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px #1e7137;
+ 
+	border: 1px solid #659941;
+	border-radius: 2px;
+    box-shadow: 0 0 0 1px #cfe7cf inset;
+	background-color:#44a342;
+    background-image: -webkit-linear-gradient(bottom, #8bc53f, #05592b 100.0%);
+    background-image: linear-gradient(to bottom, #8bc53f, #05592b 100.0%);
+}
+.button:hover {
+	text-shadow: 1px 1px 0px #196331;
+	border-color: #363;
+    box-shadow: 0 0 0 1px #478964 inset;
+	background-color:#0a6231;
+    background-image: -webkit-linear-gradient(bottom,  #008041, #13431f 100.0%);
+    background-image: linear-gradient(to bottom,  #008041, #13431f 100.0%);
+}
+.button:active {
+    background-image: -webkit-linear-gradient(bottom, #13431f, #008041 100.0%);
+    background-image: linear-gradient(to bottom, #13431f, #008041 100.0%);
+}
+.button.disabled, .button[disabled="disabled"], .button[disabled], .button.disabled:hover, .button[disabled="disabled"]:hover, .button[disabled]:hover {
+	cursor: default;
+	color: #fff !important;
+	text-shadow: 1px 1px 0px #83b380 !important;
+	border-color: #abd3b4;
+	box-shadow: 0 0 0 1px #f1f1f1 inset;
+	background-color:#b7d4ae;
+    background-image: -webkit-linear-gradient(bottom, #cfe7b2, #9fc0ab 100.0%);
+    background-image: linear-gradient(to bottom, #cfe7b2, #9fc0ab 100.0%);
+}
+
+/*
+	SECONDARY BUTTON
+    Style guide calls this "Inverse"
+
+	----------------	Normal		Hover
+	text shadow			#333333		#333333
+ 
+	solid background	#757679		#312f30
+	gradient top		#939598		#403f41
+	gradient bottom		#58585a		#231f20
+ 
+	inner border		#a5a5a6		#656364
+	outer border		#58585a		#231f20
+*/
+.button.secondary {
+	text-shadow: 1px 1px 0px #333;
+	border-color: #58585a;
+    box-shadow: 0 0 0 1px #a5a5a6 inset;
+	background-color:#757679;
+    background-image: -webkit-linear-gradient(bottom, #939598, #58585a 100.0%);
+    background-image: linear-gradient(to bottom, #939598, #58585a 100.0%);
+}
+.button.secondary:hover {
+	border-color: #231f20;
+    box-shadow: 0 0 0 1px #656364 inset;
+	background-color:#312f30;
+    background-image: -webkit-linear-gradient(bottom, #403f41, #231f20 100.0%);
+    background-image: linear-gradient(to bottom, #403f41, #231f20 100.0%);
+}
+.button.secondary:active {
+    background-image: -webkit-linear-gradient(bottom, #231f20, #403f41 100.0%);
+    background-image: linear-gradient(to bottom, #231f20, #403f41 100.0%);
+}
+.button.secondary.disabled, .button.secondary[disabled="disabled"], .button.secondary[disabled], .button.secondary.disabled:hover, .button.secondary[disabled="disabled"]:hover, .button.secondary[disabled]:hover {
+	cursor: default;
+	color: #fff !important;
+	text-shadow: 1px 1px 0px #838f90 !important;
+	border-color: #bcbcbd;
+	box-shadow: 0 0 0 1px #e2e2e3 inset;
+	background-color:#c9c9ca;
+    background-image: -webkit-linear-gradient(bottom, #d2d2d3, #bfbfbf 100.0%);
+    background-image: linear-gradient(to bottom, #d2d2d3, #bfbfbf 100.0%);
+}
+
+/*
+	TERTIARY BUTTON
+    Style guide calls this "Alt Primary"
+
+	---------------		Normal		Hover
+	text shadow			#369		#369
+ 
+	solid background	#628dc7		#1a4988
+	gradient top		#90bbe3		#335eaa
+	gradient bottom		#335eaa		#003366
+ 
+	inner border		#97b3d9		#5376a5
+	outer border		#335eaa		#001a33
+*/
+.button.tertiary {
+	text-shadow: 1px 1px 0px #369;
+	border-color: #335eaa;
+    box-shadow: 0 0 0 1px #97b3d9 inset;
+	background-color:#628dc7;
+    background-image: -webkit-linear-gradient(bottom, #90bbe3, #335eaa 100.0%);
+    background-image: linear-gradient(to bottom, #90bbe3, #335eaa 100.0%);
+}
+.button.tertiary:hover {
+	border-color: #001a33;
+    box-shadow: 0 0 0 1px #5376a5 inset;
+	background-color:#1a4988;
+	background-image: -webkit-linear-gradient(bottom, #335eaa, #003366 100.0%);
+    background-image: linear-gradient(to bottom, #335eaa, #003366 100.0%);
+}
+.button.tertiary:active {
+    background-image: -webkit-linear-gradient(bottom, #003366, #335eaa 100.0%);
+    background-image: linear-gradient(to bottom, #003366, #335eaa 100.0%);
+}
+.button.tertiary.disabled, .button.tertiary[disabled="disabled"], .button.tertiary[disabled], .button.tertiary.disabled:hover, .button.tertiary[disabled="disabled"]:hover, .button.tertiary[disabled]:hover {
+	cursor: default;
+	color: #fff !important;
+	text-shadow: 1px 1px 0px #90b0d1 !important;
+ 	border-color: #adc2d6;
+	box-shadow: 0 0 0 1px #d5e1f0 inset;
+    background-color:#c2d7ec;
+    background-image: -webkit-linear-gradient(bottom, #d5e9fe, #b0c5d9 100.0%);
+    background-image: linear-gradient(to bottom, #d5e9fe, #b0c5d9 100.0%);
+}
+/*
+	ACTION BUTTON
+    Style guide calls this "Default"
+
+	-------------		Normal		Hover
+	solid background	#CACACA		#aeb0b4
+	gradient top		#F2F2F2		#F2F2F2
+	gradient bottom		#A7A7A7		#656565
+ 
+	inner border		#a5a5a6		#656364
+	outer border		#969696		#29373
+*/
+.button.action {
+    color: #28353C;
+	text-shadow: none;
+ 	border-color: #999;
+    box-shadow: 0 0 0 1px #fefefe inset;
+ 	background-color: #cacaca;
+    background-image: -webkit-linear-gradient(bottom, #F0F0F0, #A6A7A8 100.0%);
+    background-image: linear-gradient(to bottom, #F0F0F0, #A6A7A8 100.0%);
+}
+.button.action:hover {
+	box-shadow: 0 0 0 1px #F0F0F0 inset;
+    outline: none;
+    background: #aeb0b4; 
+    background-image: -webkit-linear-gradient(bottom, #C9CAD1, #939598 100.0%);
+    background-image: linear-gradient(to bottom, #C9CAD1, #939598 100.0%);
+}
+.button.action:active {
+	box-shadow: 0 0 0 1px #F0F0F0 inset;
+    background: #aeb0b4; 
+    background-image: -webkit-linear-gradient(bottom, #939598, #C9CAD1 100.0%);
+    background-image: linear-gradient(to bottom, #939598, #C9CAD1 100.0%);
+}
+.button.action.disabled, .button.action[disabled="disabled"], .button.action[disabled], .button.action.disabled:hover, .button.action[disabled="disabled"]:hover, .button.action[disabled]:hover {
+	cursor: default;
+	color: #999 !important;
+	text-shadow: none !important;
+ 	border-color: #d6d6d6;
+	box-shadow: 0 0 0 1px #fff inset;
+    background-color:#ececed;
+    background-image: -webkit-linear-gradient(bottom, #f8f8f8, #dddedf 100.0%);
+    background-image: linear-gradient(to bottom, #f8f8f8, #dddedf 100.0%);
+}
+
+/*  ICON BUTTON
+    Used in the Planner and Logbooks for selecting between Day, Month, and Year
+*/
+.iconButton
+{
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 10px;
+    text-transform: lowercase;
+    color: #000;
+    font-size: 11px;
+    font-size: 1.1rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: #d8d8d8;
+    background-image: -webkit-linear-gradient(bottom, #fff, #ccc 100.0%);
+    background-image: linear-gradient(to bottom, #fff, #ccc 100.0%);
+}
+.iconButton:hover {
+    background-color: #ccc;
+    border-color: #bbb;
+    text-shadow: none;
+    outline: none;
+    background-image: none;
+}
+.iconButton:active {
+    border-color: #bbb;
+    background-image: -webkit-linear-gradient(bottom, #999, #ccc 100.0%);
+    background-image: linear-gradient(to bottom, #999, #ccc 100.0%);
+}
+.iconButton.selected {
+	color: #fff;
+	border: 1px solid #369;
+	background-color:#69c;
+    background-image: -webkit-linear-gradient(bottom, #9cf, #369 100.0%);
+    background-image: linear-gradient(to bottom, #9cf, #369 100.0%);    	
+}
+
+/*
+	SMALLBTN - A stand-alone component; does not extend .button.
+	--------
+	text color			#000
+	text shadow			none
+ 
+	solid background	#
+	gradient top		#fff
+	gradient bottom		#ccc
+ 
+	outer border		#bbb
+*/
+.smallbtn {
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px 10px;
+    text-transform: lowercase; /* Don't change this. --RKC */
+     
+	color: #000;
+	font-size: 11px;font-size: 1.1rem;
+ 
+	border: 1px solid #bbb;
+	border-radius: 5px; 
+	background-color:#d8d8d8;
+    background-image: -webkit-linear-gradient(bottom, #fff, #ccc 100.0%);
+    background-image: linear-gradient(to bottom, #fff, #ccc 100.0%);
+    
+    /* Overrides for the places where we have applied both .button and .smallbtn 
+       (which is no longer needed nor desired) */
+    text-shadow: none !important;
+	font-weight: normal;
+    box-shadow: none !important;
+}
+.smallbtn:hover, .button.small:hover {
+    background-color: #ccc;
+    border-color: #bbb;
+    text-shadow: none;
+    outline: none;
+    background-image: none;
+}
+.smallbtn:active, .button.small:active {
+    border-color: #bbb;
+    background-image: -webkit-linear-gradient(bottom, #999, #ccc 100.0%);
+    background-image: linear-gradient(to bottom, #999, #ccc 100.0%);
+}
+.smallbtn.disabled, .smallbtn[disabled="disabled"], .smallbtn[disabled], .smallbtn.disabled:hover, .smallbtn[disabled="disabled"]:hover, .smallbtn[disabled]:hover,
+.smallbtn.tertiary.disabled, .smallbtn.tertiary[disabled="disabled"], .smallbtn.tertiary[disabled], .smallbtn.tertiary.disabled:hover, .smallbtn.tertiary[disabled="disabled"]:hover, .smallbtn.tertiary[disabled]:hover {
+	cursor: default;
+	color: #bbb;
+    border-color: #bbb;
+	
+	background-color:#eee;
+    background-image: -webkit-linear-gradient(bottom, #fff, #e6e6e6 100.0%);
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6 100.0%);
+}
+/*
+	TERTIARY SMALLBTN - extends .smallbtn
+    (I chose "tertiary" because it matches the style of the .button.tertiary --RKC)
+	-----------------
+	text color			#fff
+	text shadow			none
+ 
+	solid background	#69c
+	gradient top		#9cf
+	gradient bottom		#369
+ 
+	outer border		#369
+*/
+.smallbtn.tertiary {
+	color: #fff;
+ 
+	border: 1px solid #369;
+	background-color:#69c;
+    background-image: -webkit-linear-gradient(bottom, #9cf, #369 100.0%);
+    background-image: linear-gradient(to bottom, #9cf, #369 100.0%);    	
+}
+.smallbtn.tertiary:hover {
+    background-color: #369;
+    background-image: none;
+}
+.smallbtn.tertiary:active {
+    background-image: -webkit-linear-gradient(bottom, #036, #369 50.0%);
+    background-image: linear-gradient(to bottom, #036, #369 50.0%);    	
+}
+
+/* Other specialized button classes */
+a.button { text-decoration: none; color: #fff; }
+.button.nohover:hover { background-position:0 -31px; cursor:default; }
+.viewAllBtn { margin: 0 0 5px 5px; position: absolute; bottom: 0; left: 0; clear: both; cursor: pointer; }
+
+
+/* ==== Fixed Today At A Glance Gadget === */
+#todayContainer { position: fixed; top: 170px; right: 0;  width:175px; }
+#todayContainer.rightOffset { right: -140px;}
+.fc thead th:last-child { border-right: 1px solid #999;}
+.fc thead th:first-child { border-left: 1px solid #999;}
+.fc thead th { border-bottom: 1px solid #999;}
+.fc .fc-widget-content, .fc .fc-widget-header { border-color: #999;}
+.fc thead tr:first-child { height:30px; }
+.fc-widget-header { background: #eee;}
+.fc-view-agendaWeek thead tr th { border: none; color: #58595B;border-top: 1px solid #999;}
+
+/* ==== Mini Calendar (uses classes from Full Calendar plugin) ====
+    Since Full Calendar adds elements to the DOM dynamically, we can't add classes
+    to those elements in markup.  Therefore, we have to add the styles to the classes
+    that Full Calendar uses, even if they are styles that we would normally apply using
+    extra styling classes like seaGrad and borderBox.
+*/
+.miniCal .fc-other-month *,
+.miniCal .fc-week4 .fc-other-month,
+.miniCal .fc-week5 .fc-other-month { visibility: hidden; }
+.miniCal .fc-header { display: block;
+           /* bg gradient is identical to .seaGrad in module-skins.css */
+           background-image: -moz-linear-gradient(top , #335eaa, #003366 100.0%);
+           background-image: -webkit-linear-gradient(top , #335eaa, #003366 100.0%);
+           background-image: -o-linear-gradient(top , #335eaa, #003366 100.0%);
+           background-image: -ms-linear-gradient(top , #335eaa, #003366 100.0%);
+           background-image: linear-gradient(top , #335eaa, #003366 100.0%);
+           background-color:#036;
+           
+           /* same as borderBox class */
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+           }
+.miniCal .fc-header-title { margin: 8px; }
+.miniCal .fc-view-month .fc-widget-header { background-image: none;}
+.miniCal.fc .fc-content thead tr { height:auto; }
+.miniCal.fc .fc-content thead th.fc-widget-header { font-weight: normal; }
+.miniCal h2 { color: #fff;
+    font-weight: normal;}
+.miniCal table.fc-border-separate {
+	border-collapse: collapse;
+	}
+	
+
+/* ==== Markers (originally for primary and preferred contact methods) ==== */
+.mark {
+    color: #fff;
+    font-size: 9px;font-size: 0.9rem;
+    padding: 1px 4px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.mark.markerA {
+    background-color: #2a9029;
+}
+.mark.markerB {
+    background-color: #999;
+}
+
+/* ==== Busy Indicator ==== */
+.busyIndicator {
+    font-size: 12px;font-size: 1.2em;
+    line-height: 18px;
+}
+.busyIndicator:before {
+    content: url('/Areas/Crm/content/images/sm-Spinner.gif');
+    display: inline-block;
+    margin-right: 6px;
+    position: relative;
+    top: 4px;
+}
+
+/* ==== Blocks ==== */
+.sortBlocksContainer {
+    font-size: 12px;font-size: 1.2em;
+    line-height: 16px;
+}
+.sortBlockNum, .sortBlock {
+    padding: 6px;
+    margin-bottom: 6px;
+    /*height: 16px;*/
+}
+.sortBlockNum {
+    border: 1px solid transparent; /* To align w/ text in sortBlock */
+    color: #bbb;
+}
+.sortBlock {
+    border: 1px solid #bfbfbf;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-overflow: ellipsis;
+}
+.sortBlock:nth-child(even) {
+    background-color: #e7e7e8;
+}
+
+.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
+.ui-sortable-placeholder * { visibility: hidden; }
+
+.contentSection { margin-bottom: 12px; }
+
+.gap {    margin: 12px;
+          overflow: hidden; /*for clearfix*/
+}
+.lgap { margin-left: 12px; }
+
+.hdBox { /* Padding matches the h1 and h2 tags as they appear in module head blocks */
+    padding: 9px 12px;
+}
+
+.borderBox {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.halfBlock 
+{
+    width: 49.5%;
+    display: inline-block;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    vertical-align: top;
+}
+.thirdBlock
+{
+    width: 33%;
+    display:inline-block;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    vertical-align: top;
+}
+
+.btmLine 
+{
+    border-bottom: 1px solid #666;
+}
+
+.topLine 
+{
+    border-top: 1px solid #666;
+}
+
+.ellipsisBlock 
+{
+    text-overflow: ellipsis;
+    overflow: hidden;    
+}
+
+
+.failureMessageBox
+{
+    border: 4px solid #F26522;
+    background-color: #FFEABB;
+    padding: 12px;
+    margin: 0px;
+}
+
+.successMessageBox
+{
+    border: 4px solid #327A3C;
+    background-color: #97F7A4;
+    padding: 12px;
+    margin: 0px;
+}
+
+/* ==== Images ==== */
+.dumbnail { width: 110px; } /* height not specified to allow proper aspect ratio */
+.dumbnailsmall { width: 95px; }
+
+/* ==== Image Gallery ==== */
+.imageGalleryItem {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    line-height: 15px;
+}
+.imageGalleryItem:hover {
+    background-color: #e7e7e8;
+    box-shadow: 1px 2px 5px #bfbfbf;
+}
+.imageGalleryItem.marked {
+    background-color: #ffeabb;
+    border: 1px solid #f7931e;
+}
+
+/* ==== Rotation ==== */
+.rotate90 
+{
+    rotation: 90deg;  /* CSS 3 Attribute */
+    -webkit-transform: rotate(90deg); /* Webkit Attribute */
+    -moz-transform: rotate(90deg); /* Mozilla Attribute */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /* IE (8) Attribute, IE9 supports CSS3 rotate attribute */
+}
+
+.rotate180 
+{
+    rotation: 180deg;  /* CSS 3 Attribute */
+    -webkit-transform: rotate(180deg); /* Webkit Attribute */
+    -moz-transform: rotate(180deg); /* Mozilla Attribute */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); /* IE (8) Attribute, IE9 supports CSS3 rotate attribute */
+}
+
+.rotate270 
+{
+    rotation: -90deg;  /* CSS 3 Attribute */
+    -webkit-transform: rotate(-90deg); /* Webkit Attribute */
+    -moz-transform: rotate(-90deg); /* Mozilla Attribute */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* IE (8) Attribute, IE9 supports CSS3 rotate attribute */
+}
+
+/*********  Stacking Context Reset ***********/
+.resetContext { z-index: 0; position:relative;} /* Use this to reset a container's stacking context, so that anything inside stacks over itself, but not over other elements on the page */
+
+/*** Zimbra Iframe Styles **/
+.zimbraIframe{ width:100%; height:700px; } /* Normal Zimbra Client */
+#actionTab .zimbraIframe  { height:570px; } /* Zimbra Compose Window */
+
+/* ==== Font Sizes (default is 11px) ==== */
+.fs11 { font-size: 11px;font-size: 1.1rem; /* 11px */ }
+.fs12 { font-size: 12px;font-size: 1.2rem; /* 12px */ }
+.fs14 { font-size: 14px;font-size: 1.4rem; /* 14px */ }
+.fs18 { font-size: 18px;font-size: 1.8rem; /* 18px */ }
+.fs21 { font-size: 21px;font-size: 2.1rem; /* 21px */ }
+.fs30 { font-size: 30px;font-size: 3.0rem; /* 30px */ }
+
+/* ==== Border Radius ==== */
+.brr5, .brb5, .br5 {
+    
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.brl5, .brb5, .br5
+{
+    -webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.brr5, .brt5, .br5 {    
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+
+.brl5, .brt5, .br5
+{
+    -webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+}
+
+.brr10, .brb10, .br10 {    
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+}
+.brr10, .brt10, .br10 {    
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+}
+.brl10, .brb10, .br10
+{
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.brl10, .brt10, .br10
+{
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+
+.txtBr{position:absolute; bottom:0px; right:0px;}
+
+/* ==== Border ==== */
+.rightSkyBorder { border-right: 1px solid #91BDE5;}
+
+/*========= jQuery UI Override Styles =========*/
+/* Avoid adding new stuff here at all costs! This is a very crappy last resort!! */
+.ui-datepicker-trigger { margin-left:5px; vertical-align:middle; margin-top:-5px; cursor:pointer;}
+
+.plusDealerLot {margin-left:15px;}
+
+/* ==== Dealership Filter Styles ==== */
+.dealershipFilterContainer 
+{
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;   
+}
+
+.dfFilterHiddenList 
+{
+    width: 150px;
+    margin: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 18px;
+}
+
+/* ==== Multi-Select Group Styles === */
+.teamFilterChosen 
+{
+    width: 200px; 
+}
+
+.teamFilterChosen .search-field input 
+{
+    font-size: 1.1rem;
+}
+
+.teamFilterChosen .chosen-results li 
+{
+    line-height: 1.5rem;
+    text-indent: -0.5rem;
+    margin-right: 0.5rem;
+}
+
+.teamFilterChosen .chosen-results li.multiSelectGroup
+{
+    font-weight: bold;
+}
+
+.teamFilterChosen .chosen-results li.multiSelectGroupItem
+{
+    padding-left: 16px;
+}
+
+
+.informationalMessageAlert 
+{
+    border: 4px solid #F26522;
+    background-color: #FFEABB;
+    padding: 12px;
+    margin: 0px;
+}
+
+.informationalMessageAlertDate 
+{
+    font-size: 0.9rem/*9px*/;
+}
+
+.tooltip 
+{
+    z-index: 2;
+    position: absolute;
+    border: 1px solid #828282;
+    padding: 4px;
+    background: #F7F7F8;
+    box-shadow: 2px 2px 4px 0px #696969;
+    color: #434343;
+}
+
+.media .img.icon16 + .bd { /* for the .bd of media blocks using an icon16 image */
+    line-height: 16px;
+    padding-left: 4px;
+}
+
+.groupBox {
+    border: 2px groove threedface;
+}
+
+img.maxWidth100 {
+    max-width: 100%;
+}
+
+.codeblock 
+{
+    white-space: pre;
+    font-family: monospace;
+    font-size: 12px;font-size: 1.4rem;
+}
+
+.preview {
+    line-height: 1.5em;
+}
+
+.marker {
+    background-color: Yellow;
+}

@@ -1,0 +1,41 @@
+/* ====== Headings ====== */
+h1, .h1 {
+    font-size: 18px;font-size: 1.8rem;/* 18px */
+    font-style: normal;
+    font-weight: bold;
+    color: #666;
+    padding-bottom: 12px;
+}
+h2, .h2 {
+    font-size: 14px;font-size: 1.4rem;/* 14px */
+    font-style: normal;
+    font-weight: bold;
+    color: #000;
+}
+h3, .h3 {
+    font-size: 12px;font-size:1.2rem; /* 12px */
+    font-weight:bold;
+    font-style: normal;
+    color:#000;
+}
+h4{ font-size: 14px; font-size: 1.4rem; color: #666;}
+h4.active{ color: #231F20;}
+h5, .h5{
+    font-size: 14px;font-size: 1.4rem;/* 14px */
+    font-style: normal;
+    font-weight: normal;
+    color: #999;    
+}
+
+.hdNoPadding { padding-bottom: 0; }
+.hdMinPadding { padding-bottom: 6px; }
+
+.lightHead
+{
+    color: #fff;
+    text-shadow: -1px -1px 0px #333;
+}
+.tofe {text-overflow: ellipsis;}
+
+
+.center {margin: 0 auto;}

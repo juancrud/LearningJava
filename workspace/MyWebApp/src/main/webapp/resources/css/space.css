@@ -1,0 +1,188 @@
+/* Spacing CSS */
+/* FirstCode: p = padding, m = margin */
+/* SecondCode: a = all, t = top, b = bottom, r = right, l = left */
+/* ThirdCode: xs = extra-small, s = small, m = medium, l = large, xl = extra-large, n = none, a = auto */
+
+/* Padding Top */
+.ptxs, .paxs {
+	padding-top: 5px;
+}
+.pts, .pas {
+	padding-top: 10px;
+}
+.ptm, .pam {
+	padding-top: 15px;
+}
+.ptl, .pal {
+	padding-top: 20px;
+}
+.ptxl, .paxl {
+	padding-top: 25px;
+}
+.ptn, .pan {
+	padding-top: 0;
+}
+.pta, .paa {
+	padding-top: auto;
+}
+
+/* Padding Bottom */
+.pbxs, paxs {
+	padding-bottom: 5px;
+}
+.pbs, .pas {
+	padding-bottom: 10px;
+}
+.pbm, .pam {
+	padding-bottom: 15px;
+}
+.pbl, .pal {
+	padding-bottom: 20px;
+}
+.pbxl, .paxl {
+	padding-bottom: 25px;
+}
+.pbn, .pan {
+	padding-bottom: 0;
+}
+.pba, .paa {
+	padding-bottom: auto;
+}
+
+/* Padding Right */
+.prxs, .paxs {
+	padding-right: 5px;
+}
+.prs, .pas {
+	padding-right: 10px;
+}
+.prm, .pam {
+	padding-right: 15px;
+}
+.prl, .pal {
+	padding-right: 20px;
+}
+.prxl, .paxl {
+	padding-right: 25px;
+}
+.prn, .pan {
+	padding-right: 0;
+}
+.pra, .paa {
+	padding-right: auto;
+}
+
+/* Padding Left */
+.plxs, .paxs {
+	padding-left: 5px;
+}
+.pls, .pas {
+	padding-left: 10px;
+}
+.plm, .pam {
+	padding-left: 15px;
+}
+.pll, .pal {
+	padding-left: 20px;
+}
+.plxl, .paxl {
+	padding-left: 25px;
+}
+.pln, .pan {
+	padding-left: 0;
+}
+.pla, .paa {
+	padding-left: auto;
+}
+
+/* Margin Top */
+.mtxs, .maxs {
+	margin-top: 5px;
+}
+.mts, .mas {
+	margin-top: 10px;
+}
+.mtm, .mam {
+	margin-top: 15px;
+}
+.mtl, .mal {
+	margin-top: 20px;
+}
+.mtxl, .maxl {
+	margin-top: 25px;
+}
+.mtn, .man {
+	margin-top: 0;
+}
+.mta, .maa {
+	margin-top: auto;
+}
+
+/* Margin Bottom */
+.mbxs, .maxs {
+	margin-bottom: 5px;
+}
+.mbs, .mas {
+	margin-bottom: 10px;
+}
+.mbm, .mam {
+	margin-bottom: 15px;
+}
+.mbl, .mal {
+	margin-bottom: 20px;
+}
+.mbxl, .maxl {
+	margin-bottom: 25px;
+}
+.mbn, .man {
+	margin-bottom: 0;
+}
+.mba, .maa {
+	margin-bottom: auto;
+}
+
+/* Margin Right */
+.mrxs, .maxs {
+	margin-right: 5px;
+}
+.mrs, .mas {
+	margin-right: 10px;
+}
+.mrm, .mam {
+	margin-right: 15px;
+}
+.mrl, .mal {
+	margin-right: 20px;
+}
+.mrxl, .maxl {
+	margin-right: 25px;
+}
+.mrn, .man {
+	margin-right: 0;
+}
+.mra, .maa {
+	margin-right: auto;
+}
+
+/* Margin Left */
+.mlxs, .maxs {
+	margin-left: 5px;
+}
+.mls, .mas {
+	margin-left: 10px;
+}
+.mlm, .mam {
+	margin-left: 15px;
+}
+.mll, .mal {
+	margin-left: 20px;
+}
+.mlxl, .maxl {
+	margin-left: 25px;
+}
+.mln, .man {
+	margin-left: 0;
+}
+.mla, .maa {
+	margin-left: auto;
+}

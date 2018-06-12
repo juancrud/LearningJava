@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.juancrud.catalog</groupId>
+  <artifactId>CatalogManager</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>CatalogManager</name>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.juancrud.order</groupId>
+  		<artifactId>OrderManager</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.juancrud.entities.app</groupId>
+  		<artifactId>AppEntities</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.juancrud.mywebapp.common</groupId>
+  		<artifactId>MyWebAppCommon</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+</project>

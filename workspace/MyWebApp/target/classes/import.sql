@@ -1,0 +1,2 @@
+--insert into Person (FirstName, LastName) values ('MyFirstName', 'MyLastName')
+--insert into User (UserName, Password, PersonId) values ('MyUsername', 'MyPassword', 1)

@@ -1,0 +1,72 @@
+/*
+*
+*/
+.leftNav { padding: 36px 10px 0 10px; }
+
+.duCustomers .filterHeader { border-left-color: #034693; }
+.duMarketing .filterHeader { border-left-color: #ff8011; }
+.duInventory .filterHeader { border-left-color: #c00; }
+.duReports .filterHeader { border-left-color: #2a9029; }
+.filterHeader {    
+    border: 1px solid #666; 
+    border-left: 3px solid; 
+    padding: 5px 12px 5px 8px;
+    background-color: #EDEEEE;
+    background-image: -webkit-linear-gradient(left, #fff 0%, #dbdddc 100%);
+	background-image: -moz-linear-gradient(left, #fff 0%, #dbdddc 100%);	
+	background-image: -ms-linear-gradient(left, #fff 0%, #dbdddc 100%);
+	background-image: linear-gradient(left, #fff 0%, #dbdddc 100%);
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.filterHeader.hasSubItems { padding-left: 4px; }
+
+.filterList > li { width: 210px;margin-top: 6px; }
+.filterList > li:first-child { margin-top: 0; }
+.filterList .linkList { padding-top: 7px;padding-bottom: 6px;display: none;}
+.filterList .linkList li > div { padding-left: 48px; }
+.filterList .linkList li > div.hasSubItems { padding-left: 24px; }
+.filterList .linkList li ul li > div { padding-left: 60px; }
+.filterList .linkList li ul li > div.hasSubItems { padding-left: 48px; }
+.filterList .linkList li ul li ul li > div { padding-left: 72px; }
+.filterList .activeRow .filterHeader { box-shadow: 3px 3px 12px 0px #424243; }
+
+.filterList .icon16 { height: 12px;width: 20px;text-align: center; }
+
+
+.menuItem 
+{
+    font-size: 14px;font-size: 1.4rem;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+.menuItem a {
+    text-decoration: none;
+}
+.menuItem:hover {
+    background-color: #bbb;
+}
+.menuItem.active {
+    background-color: #069;
+}
+.menuItem.active > * {
+    color: #fff;
+}
+.menuLabel {
+    font-size: 11px;font-size: 1.1rem;
+    color: #999;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 3px;
+}
+.menuLabel:first-child {
+    margin-top: 0;
+}
+.menuItem, .menuLabel {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.menuItemPopin {
+    margin-top: 18px;
+}
